@@ -23,13 +23,15 @@ export default class Sidebar extends Component {
                             <div className="collapse" id="collapsedash" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav className="sb-sidenav-menu-nested nav">
                                     <a className="nav-link sub_nav_link" href="/admin">COMMANDES</a>
-                                    <a  className={role === "Admin"?"nav-link sub_nav_link ":"d-none"}  href="/admin/order/dashbord">TABLEAUX</a>
+                                    {/* <a  className={role === "Admin"?"nav-link sub_nav_link ":"d-none"}  href="/admin/order/dashbord">TABLEAUX</a> */}
+                                     <a  className="nav-link sub_nav_link "  href="/admin/order/dashbord">TABLEAUX</a>
                                 </nav>
                             </div>
 
                             
                             
-                            <a    className={role === "Admin"?"nav-link collapsed":"d-none"}   href="#" data-toggle="collapse" data-target="#collapseLocations" aria-expanded="false" aria-controls="collapseLocations">
+                            {/* <a    className={role === "Admin"?"nav-link collapsed":"d-none"}   href="#" data-toggle="collapse" data-target="#collapseLocations" aria-expanded="false" aria-controls="collapseLocations"> */}
+                            <a    className="nav-link collapsed"   href="#" data-toggle="collapse" data-target="#collapseLocations" aria-expanded="false" aria-controls="collapseLocations">
                                 <div className="sb-nav-link-icon"><i className="fas fa-users" /></div>
                                 CLIENTS
                                 <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -57,7 +59,7 @@ export default class Sidebar extends Component {
                             </div>
 
 
-                            <a  className={role === "Admin"?"nav-link collapsed":"d-none"}  href="#" data-toggle="collapse" data-target="#collapseProducts" aria-expanded="false" aria-controls="collapseProducts">
+                            <a  className="nav-link collapsed"  href="#" data-toggle="collapse" data-target="#collapseProducts" aria-expanded="false" aria-controls="collapseProducts">
                                 <div className="sb-nav-link-icon"><i className="fas fa-box" /></div>
                                 PRODUITS DETAILS
                                 <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -71,7 +73,7 @@ export default class Sidebar extends Component {
                             </div>
 
 
-                            <a  className={role === "Admin"?"nav-link collapsed":"d-none"}  href="#" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
+                            <a  className="nav-link collapsed"  href="#" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
                             <div className="sb-nav-link-icon"><i className="fas fa-list" /></div>
                             CATEGORIES
                             <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -88,7 +90,7 @@ export default class Sidebar extends Component {
                             </nav>
                         </div>
                           
-                            <a  className={role === "Admin"?"nav-link collapsed":"d-none"}  href="#" data-toggle="collapse" data-target="#collapseGros" aria-expanded="false" aria-controls="collapseGros">
+                            <a  className="nav-link collapsed"  href="#" data-toggle="collapse" data-target="#collapseGros" aria-expanded="false" aria-controls="collapseGros">
                                 <div className="sb-nav-link-icon"><i className="fas fa-box" /></div>
                                 PRODUITS GROS
                                 <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down" /></div>
@@ -101,19 +103,19 @@ export default class Sidebar extends Component {
                                 </nav>
                             </div>
 
-                            <a className={role === "Admin"?"nav-link":"d-none"} href="/admin/user/list">
+                            <a className="nav-link" href="/admin/user/list">
                                 <div className="sb-nav-link-icon"><i className="fas fa-users" /></div>
                                 ADMINISTRATEUR
                             </a>
 
 
-                            <a className={role === "Admin"?"nav-link":"d-none"} href="/admin/order/list">
+                            <a className="nav-link" href="/admin/order/list">
                                 <div className="sb-nav-link-icon"><i className="fas fa-cart-arrow-down" /></div>
                                 ORDERS DETAILS
                             </a>
 
 
-                            <a className={role === "Admin"?"nav-link":"d-none"} href="/admin/serblog/service">
+                            <a className="nav-link" href="/admin/serblog/service">
                                 <div className="sb-nav-link-icon"><i className="fas fa-map-marked-alt" /></div>
                                 SERVICES/BLOGS
                             </a>

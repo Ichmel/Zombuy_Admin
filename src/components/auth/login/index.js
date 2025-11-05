@@ -41,6 +41,12 @@ export default class Signin extends Component {
     
   };
 
+  handleSubmit2 = async (event) => {
+     event.preventDefault();
+     window.location.href = "/admin";
+
+  }
+
   
   togglePasswordVisibility = () => {
     this.setState((prevState) => ({
@@ -93,6 +99,10 @@ export default class Signin extends Component {
                                                     </div>
                                                     <div className="form-group d-flex align-items-center justify-content-between mt-4 mb-0" onClick={this.handleSubmit}>
                                                         <a className="btn btn-sign hover-btn">Login</a>
+                                                    </div>
+
+                                                    <div className="form-group d-flex align-items-center justify-content-between mt-4 mb-0" onClick={this.handleSubmit2}>
+                                                        <a className="btn btn-sign hover-btn">Acceder à la page  </a>
                                                     </div>
                                                 </form>
                                             </div>
